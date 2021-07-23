@@ -29,7 +29,7 @@
   .home {
     padding: 1rem 4rem; } }
 
-@media (max-width: 991px) {
+@media (min-width: 1200px) and (max-width: 991px) {
   header {
     left: -120%; }
   #menu {
@@ -38,6 +38,16 @@
     left: 0%; }
   body {
     padding: 0; } }
+
+@media (min-width: 991px) and (max-width: 768px) {
+  html {
+    font-size: 50%; } }
+
+@media (min-width: 768px) and (max-width: 400px) {
+  header {
+    width: 100vw; }
+  .heading {
+    margin: 0 3rem; } }
 
 .about .row {
   display: flex;
@@ -58,9 +68,58 @@
         color: #eee;
         padding: 0 .5rem; }
 
-.badiera {
-  width: 10px;
-  height: 10px; }
+.bandiera {
+  margin-left: 1rem;
+  width: 1.8rem;
+  height: 1.8rem; }
+
+.logo {
+  width: 10rem;
+  height: 10rem; }
+
+.experience .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0; }
+  .experience .box-container .box {
+    margin-top: 2rem;
+    text-align: center;
+    width: 60%;
+    border: 0.2rem solid #000C66;
+    background-color: #000C66; }
+    .experience .box-container .box .counter {
+      display: flex;
+      justify-content: space-around; }
+      .experience .box-container .box .counter .language h4 {
+        text-align: center;
+        margin-left: 2rem; }
+      .experience .box-container .box .counter img {
+        background: #000C66;
+        text-align: center;
+        padding: 0 1.5rem 1.5rem 1.5rem; }
+    .experience .box-container .box h4 {
+      font-size: 2rem;
+      color: #fff;
+      padding-top: 1.5rem; }
+      .experience .box-container .box h4 span {
+        color: #FFC0B6;
+        text-transform: uppercase;
+        font-style: bold; }
+    .experience .box-container .box h2 {
+      font-size: 3rem;
+      color: #fff;
+      padding-top: 1.5rem;
+      font-style: bold; }
+    .experience .box-container .box h3 {
+      font-size: 2rem;
+      color: #fff;
+      padding-top: 2rem; }
+    .experience .box-container .box p {
+      font-size: 1.5rem;
+      color: #eee;
+      padding: 2rem 2rem 2rem 2rem; }
 
 .header {
   position: fixed;
@@ -96,7 +155,8 @@
         background: #0000FF;
         color: #fff;
         font-size: 2rem;
-        border-radius: 5rem; }
+        border-radius: 5rem;
+        text-transform: capitalize; }
       .header__navbar ul li a:hover {
         background: #FFC0B6; }
 
@@ -175,7 +235,6 @@
   text-decoration: none;
   outline: none;
   border: none;
-  text-transform: capitalize;
   transition: all .2s linear; }
 
 *::selection {

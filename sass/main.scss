@@ -7,6 +7,7 @@
 @import "components/media-query";
 
 @import "layout/about";
+@import "layout/experience";
 @import "layout/header";
 @import "layout/home";
 
@@ -19,7 +20,6 @@
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
