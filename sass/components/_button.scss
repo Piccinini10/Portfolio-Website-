@@ -1,0 +1,18 @@
+.btn {
+    padding: .7rem 3rem;
+    background: $color-letter;
+    color: $color-white;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+
+    i {
+        padding: 0 .5rem;
+        font-size: 1.8rem;
+    }
+
+    :hover {
+        background: $color-secondary;
+    }
+}

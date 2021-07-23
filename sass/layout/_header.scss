@@ -1,0 +1,115 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background: #000C66;    // 1a1a1a
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    
+    &-user {
+        position: relative;
+        overflow: hidden;
+
+        &__name {
+            font-size: 3.5rem;
+            color: $color-white;
+            margin-top: 1rem;
+        }
+
+        &__post {
+            font-size: 2rem;
+            color: #eee;
+        }
+    }
+
+    &__navbar {
+        width: 100%;
+
+        ul {
+            list-style: none; 
+            padding: 1rem 3rem; 
+
+            li {
+                a {
+                    display: block;
+                    padding: 1rem;
+                    margin: 1.5rem 0;
+                    background: $color-letter;
+                    color: $color-white;
+                    font-size: 2rem;
+                    border-radius: 5rem;
+                }
+
+                a:hover {
+                    background: $color-secondary;
+                }
+            }
+        }
+    }
+}
+
+.photo {
+
+    &__shape {
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        width: 17rem;
+        height: 17rem;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__img {
+        width: 17rem;
+        height: 17rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        border: .7rem solid $color-secondary;
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all .5s;
+        backface-visibility: hidden;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        filter: blur(2px) brightness(80%);
+        transform: scale(0.9);
+    }
+
+}
+
+// PER MOBILE 
+
+#menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: $color-letter;
+    color: $color-white;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+}

@@ -1,0 +1,12 @@
+.heading {
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid $color-white;
+    color: $color-white;
+
+    span {
+        color: $color-secondary;
+    }
+}
